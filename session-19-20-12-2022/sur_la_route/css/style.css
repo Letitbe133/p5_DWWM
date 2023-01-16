@@ -1,0 +1,109 @@
+/* reset des margin et padding sur tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+/* style pour la nav */
+nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 1rem;
+  box-shadow: 0px -8px 18px 5px lightpink;
+  margin-bottom: 5rem;
+}
+
+nav img {
+  margin-right: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* style pour le header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin: 0 1rem 2rem 1rem;
+}
+
+header * {
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* classe utilitaire */
+/* limite la largeur d'un élément et centre son contenu */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0rem 1.5rem;
+}
+
+.container > h1 {
+  margin-bottom: 2rem;
+}
+
+/* style pour les articles */
+article {
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+  border: 3px dashed lightpink;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  margin-bottom: 1.2rem;
+}
+
+article p {
+  line-height: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+article a {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: border-color 500ms;
+}
+
+article a:hover {
+  border-color: palevioletred;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-wrapper article {
+  flex-basis: 350px;
+}

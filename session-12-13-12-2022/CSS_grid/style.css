@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.container {
+}
+
+.child {
+  padding: 1rem 2rem;
+}
+
+.child:nth-child(odd) {
+  background: pink;
+  color: #333;
+}
+
+.child:nth-child(even) {
+  background-color: purple;
+  color: white;
+}

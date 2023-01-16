@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  display: grid;
+}
+
+section {
+  border: 1px solid purple;
+}
+
+section:nth-child(2) {
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-areas:
+      "plant22 socials"
+      "section section";
+  }
+
+  section:first-child {
+    grid-area: "plant22";
+  }
+
+  section:nth-child(2) {
+    grid-area: "socials";
+    order: 0;
+  }
+
+  section {
+    grid-area: "section";
+  }
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header-left header-right"
+    "section-space section-members"
+    "section-membership section-contact";
+}
+
+.section-header--left {
+  grid-area: "header-left";
+}
+
+.section-header--right {
+  grid-area: "header-right";
+}
+
+.section-space {
+  grid-area: "section-space";
+}
+
+.section-members {
+  grid-area: "section-members";
+}
+
+.section-membership {
+  grid-area: "section-membership";
+}
+
+.section-contact {
+  grid-area: "section-contact";
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    grid-template-areas:
+      "header-left"
+      "section-space"
+      "section-members"
+      "section-membership"
+      "section-contact"
+      "header-right";
+  }
+  .section-header--right {
+    order: 5;
+  }
+}

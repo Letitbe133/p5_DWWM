@@ -1,0 +1,23 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar img {
+  width: 64px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid;
+}
+
+nav ul li {
+  border: 1px solid red;
+}
+
+#products-list {
+  list-style: georgian;
+}

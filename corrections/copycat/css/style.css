@@ -1,0 +1,99 @@
+/* mobile styling */
+
+/* custom properties for colors */
+:root {
+  --space: #c3a5f5;
+  --member: #ffa9af;
+  --membership: #ffe000;
+  --contact: #3cc8aa;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general styling */
+body {
+  height: 100vh;
+  padding: 8px;
+  background: black;
+  color: black;
+  font-family: U8, Arial, Helvetica, sans-serif;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  transition: transform 150ms ease-out;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+}
+
+/* box styling */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.box a {
+  font-weight: bold;
+}
+
+/* header & footer styling */
+.box:first-child,
+.box:nth-child(2) {
+  background: white;
+}
+
+.box:first-child {
+  display: flex;
+}
+
+.box:nth-child(2) {
+  order: 1;
+}
+
+/* hide logo, tagline content  & info on mobile */
+.logo,
+.info,
+.tagline p {
+  display: none;
+}
+
+/* display title on mobile */
+.tagline .title {
+  display: block;
+}
+
+/* sections background color */
+.space {
+  background: var(--space);
+}
+
+.member {
+  background: var(--member);
+}
+
+.membership {
+  background: var(--membership);
+}
+
+.contact {
+  background: var(--contact);
+}

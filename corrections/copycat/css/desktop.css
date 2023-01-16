@@ -1,0 +1,180 @@
+/* desktop styling */
+
+/* custom cursor */
+* {
+  cursor: url("../images/cursor.png"), auto;
+}
+
+/* grid layout */
+main {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 1fr 1fr;
+  grid-template-areas: "plant22 socials";
+  gap: 8px;
+}
+
+/* adjust fonts for header & footer */
+.box:first-child,
+.box:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* define grid areas */
+.box:first-child {
+  grid-area: "plant22";
+}
+
+.box:nth-child(2) {
+  grid-area: "socials";
+  order: 0;
+}
+
+.logo,
+.socials {
+  display: flex;
+  flex: 1;
+  padding: 15px;
+}
+
+.info {
+  display: block;
+}
+
+/* burger styling */
+.logo div {
+  height: 88px;
+  aspect-ratio: 1 / 1;
+  border: 8px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease-in-out;
+}
+
+.burger {
+  height: 8px;
+  width: 80%;
+  background: black;
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: black;
+}
+
+.burger:before {
+  top: -20px;
+}
+
+.burger::after {
+  top: 20px;
+}
+
+/* burger animation */
+.logo > div:hover .burger {
+  height: 0;
+}
+
+.logo > div:hover .burger:before,
+.logo > div:hover .burger:after {
+  transition: all 0.6s ease-in-out;
+}
+
+.logo > div:hover .burger::before {
+  transform: translateY(18px) rotate(45deg);
+}
+
+.logo > div:hover .burger::after {
+  transform: translateY(-22px) rotate(-45deg);
+}
+
+.tagline,
+.info {
+  padding-right: 2.5rem;
+  text-align: right;
+}
+
+.tagline p {
+  display: block;
+}
+
+.tagline .title {
+  display: inline;
+}
+
+.tagline .title + p {
+  display: inline-block;
+}
+
+/* sections animation */
+.space:hover > h2,
+.member:hover > h2,
+.membership:hover > h2,
+.contact:hover > h2 {
+  transform: scale(1.1);
+}
+
+/* header & footer links animation */
+.tagline a,
+.socials a,
+.info a {
+  position: relative;
+}
+
+.tagline a::after,
+.socials a::after,
+.info a::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 4px;
+  top: calc(100% + 2px);
+  left: 0;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tagline a:hover::after,
+.socials a:hover::after,
+.info a:hover::after {
+  width: 100%;
+}
+
+/* header & footer links color */
+.tagline a::after {
+  background: var(--space);
+}
+
+.info__spot::after {
+  background: var(--membership);
+}
+
+.info__contact::after {
+  background: var(--contact);
+}
+
+.tw::after {
+  background: #1da1f2 !important;
+}
+
+.fb::after {
+  background: #3b5998 !important;
+}
+
+.ig::after {
+  background-image: linear-gradient(
+    90deg,
+    #ffda75 18%,
+    #ff3a49 43%,
+    #ff3a49 50%,
+    #e518a1 70%,
+    #6634e1
+  ) !important;
+}

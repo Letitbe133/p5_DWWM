@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ancestor {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed purple;
+}
+
+.parent {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed pink;
+  position: relative;
+}
+
+.child {
+  width: 150px;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed lightseagreen;
+  position: fixed;
+  top: 50px;
+  left: calc(50% -75px);
+}
