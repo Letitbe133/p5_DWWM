@@ -1,0 +1,27 @@
+/* DON'T MODIFY THE CODE BELOW THIS LINE */
+
+header {
+  height: 50vh;
+}
+.color-box {
+  height: 100px;
+  background: purple;
+}
+.position-box {
+  background: pink;
+  height: 400px;
+}
+.position-box div {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.one {
+  background: hsl(158, 28%, 69%);
+}
+.two {
+  background: hsl(126, 10%, 58%);
+}
+.three {
+  background: hsl(44, 7%, 41%);
+}

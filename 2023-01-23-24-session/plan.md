@@ -2,17 +2,44 @@
 
 ## Rewind
 
-## Corrections
+Comme d'hab, petit point sur la semaine passée, ce qu'on va faire, où on en est
 
 ## Javascript - La Suite
+
+### DOM DOM DOM DOM
+
+Le DOM, c'est le Document Object Model.
+
+Ok... Mais encore ?
+
+On en parle grâce à la prez de Mathieu :)
+
+#### DOM Live
+
+On pratique un peu en live histoire de prendre en main la bête.
+
+#### DOM Playground
+
+Maintenant à vous de jouer ;)
+
+### Retour sur les fonctions
+
+- c'est quoi d'abord une fonction ?
+- quel intérêt ?
+- comment ça s'utilise ?
+  - déclaration
+  - appel
+- **paramètres** vs **arguments**
+- paramètres optionnels
+- **return**
 
 ## Ze Project
 
 Créer un site One page présentant au choix :
 
-- 3 frameworks Javascript
-- 3 librairies Javascript
-- 3 librairies CSS
+- 4 frameworks Javascript
+- 4 librairies Javascript
+- 4 librairies CSS
 
 > Un topic au choix.
 

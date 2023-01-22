@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>DOM Playground</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the DOM</h1>
+    </header>
+    <main>
+      <section id="text-playgroung">
+        <h2>Text Playground</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          consequatur natus! Perspiciatis sunt accusamus, corrupti voluptatibus
+        </p>
+        <p>
+          dolore repellat ducimus quod explicabo ab nihil tempora? Reiciendis,
+          accusantium minima commodi dolorum provident molestiae aspernatur
+          explicabo iste quas. Perspiciatis, sit fugiat eius dolorum vero itaque
+          odit at laboriosam tempora id dolor unde recusandae neque.
+        </p>
+        <p>
+          Vel, quia officia? Tempore inventore dolorum voluptas optio a
+          consequuntur accusantium molestias ab quidem dolorem iusto ad quisquam
+          esse sunt, blanditiis sed at commodi minus harum? Molestiae dicta
+          excepturi illum
+        </p>
+        <p>
+          veniam voluptatem perferendis atque, quidem corrupti deleniti eum
+          consequuntur dolor voluptas inventore in cupiditate. Consectetur,
+          velit. Consectetur, explicabo esse.
+        </p>
+      </section>
+      <section>
+        <h2>Display Playground</h2>
+        <div id="display-playground">
+          <article>
+            <h2>Article 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              totam nemo delectus fugit laborum sapiente ex molestias cum,
+              voluptate eos dolores earum ipsa iusto quibusdam ab, modi
+              similique distinctio ea omnis optio sint tempore nulla facere vel!
+              Deleniti sit qui, veniam rerum, iste cumque eos id quaerat hic
+              amet vero!
+            </p>
+          </article>
+          <article>
+            <h2>Article 2</h2>
+            <p>
+              Nulla, cum illum, ullam reprehenderit enim deleniti voluptas
+              dolorem, est quisquam maiores sapiente consequuntur? Quod
+              aspernatur enim nisi, molestias maiores a at quam quas? Aut
+              consequuntur cum suscipit excepturi eveniet, rem laudantium ipsum
+              assumenda officia voluptatum architecto harum. Labore perferendis
+              quaerat odit sed itaque sequi qui voluptatem, animi eius eaque.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Inputs Playground</h2>
+        <div class="form-group">
+          <label for="text-input"
+            >Your name<input
+              type="text"
+              name=""
+              id="text-input"
+              placeholder="Enter text here"
+              value="Brian"
+          /></label>
+          <div class="text-display"></div>
+        </div>
+        <fieldset>
+          <legend>Checkboxes</legend>
+          <div>
+            <label for="checkbox-input"
+              >Option 1<input
+                type="checkbox"
+                name=""
+                id="checkbox-input"
+                value="Option 2"
+            /></label>
+          </div>
+          <div>
+            <label for="checkbox-input"
+              >Option 2<input
+                type="checkbox"
+                name=""
+                id="checkbox-input"
+                value="Option 1"
+            /></label>
+          </div>
+          <div>
+            <label for="checkbox-input"
+              >Option 3<input
+                type="checkbox"
+                name=""
+                id="checkbox-input"
+                value="Option 3"
+            /></label>
+          </div>
+          <div class="checkbox-display"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Radio</legend>
+          <div>
+            <label for="radio-human-input"
+              >Human<input
+                type="radio"
+                name="specie"
+                id="radio-human-input"
+                value="Human"
+            /></label>
+          </div>
+          <div>
+            <label for="radio-alien-input"
+              >Alien<input
+                type="radio"
+                name="specie"
+                id="radio-alien-input"
+                value="Alien"
+                checked
+            /></label>
+          </div>
+          <div>
+            <label for="radio-none-input"
+              >None<input
+                type="radio"
+                name="specie"
+                id="radio-none-input"
+                value="None"
+            /></label>
+          </div>
+          <div class="radio-display"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Numbers</legend>
+          <label for="nb1"
+            >Number 1<input type="number" name="" id="nb1" value="42"
+          /></label>
+          <select title="operator selector" name="operator" id="operator">
+            <option value="add">+</option>
+            <option value="substract" selected>-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+          </select>
+
+          <label for="nb2"
+            >Number 2<input type="number" name="" id="nb2" value="10"
+          /></label>
+
+          <div class="number-display"></div>
+        </fieldset>
+      </section>
+      <section>
+        <h2>Color playground</h2>
+        <div class="color-box"></div>
+      </section>
+      <section>
+        <h2>Position playground</h2>
+        <div class="position-box">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
