@@ -1,0 +1,5 @@
+.box {
+  padding: 1rem 2rem;
+  background: hsl(290, 65%, 55%);
+  border-radius: 1rem;
+}
