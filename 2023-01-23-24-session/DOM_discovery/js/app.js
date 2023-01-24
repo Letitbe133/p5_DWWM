@@ -1,52 +1,59 @@
-// console.log("Js loaded !");
+// const body = document.getElementById("body");
 
-// on va sélectionner la balise h1
-const h1 = document.getElementsByTagName("h1");
-// attention, cette méthode renvoie une HTMLCollection, qu'on peut grossièrement assimiler à un array
-// console.log(h1[0]);
-// console.log(h1[0].textContent);
+// console.log(body.children);
 
-const sections = document.getElementsByTagName("section");
-// console.log(sections);
+// récupérer un élément du DOM par la valeur de son attribut ID
+const section1 = document.getElementById("first");
+// console.log(section1);
 
-// for (let i = 0; i < sections.length; i++) {
-//   console.log(sections[i]);
+// récupérer un élément du DOM par son tag
+// attention, renvoie une HTMLCollection qui ressemeble à un array (mais qui n'en est pas un)
+const h2Collection = document.getElementsByTagName("h2");
+// console.log(h2Collection);
+
+// différentes méthodes pour parcourir la collection
+
+// for (let cpt = 0; cpt < h2Collection.length; cpt++) {
+//   let content = h2Collection[cpt].innerText;
+//   content += " position " + cpt;
+//   h2Collection[cpt].innerText = content;
+//   console.log(h2Collection[cpt].innerText);
 // }
 
-// pour transformer une HTMLCollection en array on peut utiliser la méthode from() sur l'objet Array
-const sectionsArray = Array.from(sections);
-
-// ensuite je peux boucler sur mon tableau en utilisant une boucle forEach
-// sectionsArray.forEach(function (section) {
-//   console.log(section);
-// });
-
-// 3ème option utiliser une boucle for...of
-// for (let section of sections) {
-//   console.log(section);
+// for (let element of h2Collection) {
+//   console.log(element);
 // }
 
-// la méthode getElementById va nous permettre de récupérer la réf d'un élément HTML unique qui a l'id passée en paramètre
+// récupérer un élément du DOM par sa classe
+const parags = document.getElementsByClassName("parag");
 
-const firstSection = document.getElementById("first");
-// console.log(firstSection);
+// console.log(parags);
 
-// en fait on peut utiliser des méthodes qui vont nous faciliter la tâche
-const input = document.querySelector("#third #first-name");
-// console.log(input);
+// querySelector() prend en param un sélecteur CSS et retourne le premier élément qui matche avec ce sélecteur
+// surySelectorAll() idem mais retourne une NodeList qui ressemble à un tableau et qui contient la référence à tous les éléments qui matchent avec le sélecteur
+const section2 = document.querySelectorAll("#second .parag");
 
-const secondP = document.querySelector("#second p:nth-child(3)");
-// console.log(secondP.textContent);
+console.log(section2);
 
-// si je veux récupérer tous les paragraphes de la 2ème section
-const secondSectionP = document.querySelectorAll("#second p");
-console.log(secondSectionP);
+// récupérer la valeur de l'input de type text
+const textInput = document.querySelector("input[type=text]");
+console.log(textInput);
 
-// ensuite je peux parcourir la NodeList que me renvoie querySelectorAll et faire ce que je dois faire avec les éléments HTML dont je récupère la référence
-for (let para of secondSectionP) {
-  console.log(para);
-}
+// afficher sa valeur
+console.log(textInput.value);
 
-// ajouter / supprimer une classe pour un élément HTML donné grâce à la propriété classList
+// modifier sa valeur
+textInput.value = "Gandalf";
 
-// utiliser la méthode toggle() pour ajouter une classe si l'élément ne l'a pas, l'enlever sinon
+// accéder au style des éléments
+const h1 = document.querySelector("h1");
+
+// on va modifier sa couleur
+// h1.style.color = "pink";
+// h1.style.fontSize = "3rem";
+// h1.style.textAlign = "center";
+
+console.log(h1.classList.add("pinky"));
+
+// supprimer une classe d'un élément
+h1.classList.remove("test");

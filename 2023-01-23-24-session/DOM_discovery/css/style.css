@@ -3,3 +3,17 @@
   background: hsl(290, 65%, 55%);
   border-radius: 1rem;
 }
+
+.pinky {
+  font-size: 3rem;
+  color: pink;
+  text-align: center;
+}
+
+.bordered {
+  border: 1px solid pink;
+}
+
+.violet {
+  color: violet;
+}
