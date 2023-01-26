@@ -20,42 +20,20 @@ On pratique un peu en live histoire de prendre en main la bête.
 
 #### DOM Playground
 
+Je vous propose une série de petits exercices qui vous permettront de vous exercer à la manipulation du DOM.
+
+Les points abordés :
+
+- sélection des éléments du DOM
+  - éléments
+  - NodeList
+  - HTMLCollection
+- accès à la propriété **style** des éléments et modification des propriétés CSS
+- accès aux attributs HTML des éléments et récupération / modification de leur valeur
+- création d'éléments HTML et affectation de valeur
+
+Pour les plus téméraires, premier contact avec le concept d'événements
+
 Maintenant à vous de jouer ;)
 
-### Retour sur les fonctions
-
-- c'est quoi d'abord une fonction ?
-- quel intérêt ?
-- comment ça s'utilise ?
-  - déclaration
-  - appel
-- **paramètres** vs **arguments**
-- paramètres optionnels
-- **return**
-
-## Ze Project
-
-Créer un site One page présentant au choix :
-
-- 4 frameworks Javascript
-- 4 librairies Javascript
-- 4 librairies CSS
-
-> Un topic au choix.
-
-> Le focus n'est pas sur le CSS, mais l'interface utilisateur (UI) est propre et responsive.
-
-> Les différents éléments présentés ne sont pas "hard codés" mais sont générés en Javascript au chargement de la page à partir d'un tableau qu'il faudra construire
-
-> Chaque élément présenté contiendra les éléments suivants :
->
-> - le logo du framework ou de la lib
-> - une brève description
-> - un lien vers le site officiel qui s'ouvrira dans un nouvel onglet du navigateur
-> - un résumé des avantages / inconvénients
-
-### Ressources
-
-- [Javascript 101](https://capable-profiterole-4848e2.netlify.app/)
-- [Javascript.info](https://javascript.info/)
-- [Curriculum FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript)
+L'exercice se trouve dans [là](./exos/dom_playground/)
