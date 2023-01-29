@@ -52,16 +52,32 @@ En mode live coding collaboratif
 
 ### On met en pratique
 
+#### Objectif
+
+Bosser git et en profiter pour découvrir le concept de librairies et de frameworks
+
 #### Modalités
 
-Travail de groupe, 3 minimum
+Travail de groupe, 3 minimum, 4 maximum
 
-### Etapes
+#### Pitch
 
 - choisissez un thème parmi les 3 suivants :
   - frameworks javascript
   - librairies javascript
   - librairies CSS
+
+Chaque membre du groupe fera une synthèse de ses recherches :
+
+- nom de la librairie ou du framework
+- description en quelques lignes de l'outil choisi
+- avantages / inconvénients
+- votre analyse
+
+Explorez. Découvrez.
+
+### Etapes
+
 - choisissez qui parmi vous sera le propriétaire du repo distant qui devra :
   - créer **UN** repo commun sur Github (ou une autre plateforme comme Gitlab par exemple) pour le groupe
   - créer une branche `master` locale et la `push` sur le repo distant
