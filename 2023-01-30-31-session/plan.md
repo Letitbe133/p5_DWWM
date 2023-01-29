@@ -6,6 +6,8 @@ Vous en avez l'habitude maintenant, petit point sur la semaine passée, ce qu'on
 
 ## Retour sur les fonctions
 
+En mode live coding collaboratif
+
 - c'est quoi d'abord une fonction ?
 - quel intérêt ?
 - comment ça s'utilise ?
@@ -14,6 +16,64 @@ Vous en avez l'habitude maintenant, petit point sur la semaine passée, ce qu'on
 - **paramètres** vs **arguments**
 - paramètres optionnels
 - **return**
+
+### Descripting
+
+Observez le code suivant :
+
+```js
+const loop = function (array, callback) {
+  const arr = [...array];
+  const result = [];
+  for (let elem of arr) {
+    result.push(callback(elem));
+  }
+  return result;
+};
+
+const newArr = loop([25, 10, 42, 100], function (elem) {
+  return +(elem *= 1.2).toFixed(2);
+});
+```
+
+### Exercices
+
+Reprenez les exercices d'algo JS et refactorisez le code sous la forme de fonctions
+
+- analysez ce code et essayez de comprendre son fonctionnement en le commentant étape par étape
+- identifiez les `paramètres` et les `arguments`, de quels types sont-ils ?
+- est-ce que cette fonction vous fait penser à une autre fonction native de Javascript ?
+
+## Petit retour sur Git
+
+En mode live coding collaboratif
+
+- git_tryout
+
+### On met en pratique
+
+#### Modalités
+
+Travail de groupe, 3 minimum
+
+### Etapes
+
+- choisissez un thème parmi les 3 suivants :
+  - frameworks javascript
+  - librairies javascript
+  - librairies CSS
+- choisissez qui parmi vous sera le propriétaire du repo distant qui devra :
+  - créer **UN** repo commun sur Github (ou une autre plateforme comme Gitlab par exemple) pour le groupe
+  - créer une branche `master` locale et la `push` sur le repo distant
+  - ajouter en collaborateurs les membres du groupe
+- clonez le repo distant sur vos ordinateurs respectifs (à chacun sa copie)
+- créez votre branche locale au format `branche_votre_prénom`, par exemple `branche_john`
+- basculez sur votre branche
+- créez chacun un fichier `recherches.txt` qui contiendra le contenu de vos recherches
+- lorsque vous aurez terminé vos recherches :
+  - validez vos changements avec `git add` puis `git commit`
+  - poussez votre branche vers le repo distant en utilisant la commande `git push`
+- quand toutes les branches auront été `push` le propriétaire du repo distant devra `merge` toutes les branches dans `master`
 
 ## Evénements
 
