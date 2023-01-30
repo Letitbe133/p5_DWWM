@@ -38,11 +38,11 @@ const newArr = loop([25, 10, 42, 100], function (elem) {
 
 ### Exercices
 
-Reprenez les exercices d'algo JS et refactorisez le code sous la forme de fonctions
-
 - analysez ce code et essayez de comprendre son fonctionnement en le commentant étape par étape
 - identifiez les `paramètres` et les `arguments`, de quels types sont-ils ?
 - est-ce que cette fonction vous fait penser à une autre fonction native de Javascript ?
+
+Reprenez les exercices d'algo JS et refactorisez le code sous la forme de fonctions
 
 ## Petit retour sur Git
 
