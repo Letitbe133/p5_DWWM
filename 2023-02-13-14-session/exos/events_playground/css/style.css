@@ -1,0 +1,48 @@
+:root {
+  color-scheme: dark;
+  --bg: #f695f8;
+  --accent-bg: #2b2b2b;
+  --text: hsl(0, 13%, 26%);
+  --text-light: hsl(0, 10%, 26%);
+  --accent: hsl(204, 77%, 63%);
+  --code: #f06292;
+  --preformatted: #ccc;
+  --disabled: #111;
+}
+
+button,
+input[type="submit"] {
+  color: var(--text);
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+}
+
+section > div {
+  display: grid;
+  place-items: center;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.color-display {
+  width: 400px;
+  height: 400px;
+  background: var(--text-light);
+  border-radius: 5px;
+  position: relative;
+}
+
+#square {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

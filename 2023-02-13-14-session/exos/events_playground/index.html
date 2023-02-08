@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Playground</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <h1>Events Playground</h1>
+        <p>This is a hero example</p>
+      </div>
+      <section id="click">
+        <h2>Réagir au "click"</h2>
+        <p>
+          L'événement "click" est déclenché lorsqu'un utilisateur clique sur un
+          élément HTML de la page
+        </p>
+        <p>
+          Ajoutez un écouteur d'événement sur le bouton pour incrémenter le
+          compteur à chaque click
+        </p>
+        <div>
+          <button id="click-btn">Click Me !</button>
+          <p>Valeur du compteur : <span id="click-counter">0</span></p>
+        </div>
+      </section>
+      <section id="input">
+        <h2>Réagir au changement de valeur</h2>
+        <p>
+          En ajoutant un écouteur d'événement sur un input, on peut réagir au
+          changement de sa valeur
+        </p>
+        <p>
+          Ecrivez le code Javascript qui permettra en temps réel de compter le
+          nombre de caractères de l'input
+        </p>
+        <div>
+          <label for="text-input">Tapez votre texte</label>
+          <input type="text" name="" id="text-input" />
+        </div>
+        <div>
+          <p>
+            La longueur du texte est de
+            <span id="char-count">0</span> caractères
+          </p>
+        </div>
+      </section>
+      <section id="color">
+        <h2>Envoyez les couleurs !</h2>
+        <p>
+          Ecrivez le code Javascript qui permettra en temps réel de récupérer
+          les valeurs des inputs pour modifier la couleur de fond de la div
+        </p>
+        <div>
+          <div>
+            <label for="hue">Hue</label>
+            <input type="range" min="0" max="360" id="hue" /><span
+              id="hue-value"
+            ></span>
+          </div>
+          <div>
+            <label for="saturation">Saturation</label>
+            <input type="range" min="0" max="100" id="saturation" /><span
+              id="saturation-value"
+            ></span>
+          </div>
+          <div>
+            <label for="lightness">Lightness</label>
+            <input type="range" min="0" max="100" id="lightness" /><span
+              id="lightness-value"
+            ></span>
+          </div>
+          <div class="color-display"></div>
+        </div>
+      </section>
+      <section id="resize">
+        <h2>Réagir au changement de taille de la fenêtre du navigateur</h2>
+        <p>
+          En ajoutant un écouteur d'événement sur la fenêtre du navigateur on
+          peut récupérer sa hauteur et sa largeur
+        </p>
+        <p>
+          Dans un premier temps, affichez grâce à Javascript la largeur et la
+          hauteur du viewport au chargement de la page
+        </p>
+        <p>
+          Ensuite, écrivez le code qui permettra en temps réel d'afficher la
+          taille de la fenêtre du navigateur lorsqu'elle est redimensionnée
+        </p>
+        <div>
+          <p>Largeur du viewport : <span id="window-width"></span></p>
+          <p>Hauteur du viewport : <span id="window-height"></span></p>
+        </div>
+      </section>
+      <section id="submit">
+        <h2>Réagir à la soumission d'un formulaire</h2>
+        <p>
+          Lorsqu'il est soumis, un formulaire a un comportement par défaut. Les
+          données seront transmises au script mentionné dans l'attribut
+          <span><pre>action</pre></span>
+          selon la méthode HTTP de l'attribut
+          <span>
+            <pre>method</pre>
+          </span>
+        </p>
+        <p>
+          Ecrivez le code Javascript qui empêchera la soumission du formulaire
+          si :
+        </p>
+        <ul>
+          <li>
+            Le nom n'est pas renseigné ou est d'une longueur inférieure à 2
+            caractères
+          </li>
+          <li>L'age n'est pas renseigné ou est inférieur à 18</li>
+        </ul>
+        <div>
+          <form action="/" method="get">
+            <label for="name">Nom</label>
+            <input type="text" id="name" />
+            <label for="age">Age</label>
+            <input type="number" id="age" />
+            <div>
+              <input type="submit" value="Valider" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="keyboard">
+        <h2>Réagir à l'appui sur une touche</h2>
+        <p>
+          Vous pouvez écouter les événements liés à l'interaction de
+          l'utilisateur sur son clavier
+        </p>
+        <p>
+          Créez le script Javascript qui vous permettra de déplacer le point
+          bleu dans la div grâce aux flêches de de votre clavier
+        </p>
+        <p>Attention : le point ne doit pas sortir du cadre</p>
+        <div>
+          <div class="color-display">
+            <div id="square"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
