@@ -50,3 +50,5 @@ Suite du projet Bibliothèque :
 - fonctionnalités Javascript
   - validation des formulaires
   - récupération et affichage des infos d'un livre grâce à une API
+
+## Testing push events
