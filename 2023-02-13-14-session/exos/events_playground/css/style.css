@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --bg: #f695f8;
-  --accent-bg: #2b2b2b;
+  --bg: hsl(299, 100%, 84%);
+  --accent-bg: hsl(0, 0%, 17%);
   --text: hsl(0, 13%, 26%);
   --text-light: hsl(0, 10%, 26%);
   --accent: hsl(204, 77%, 63%);
-  --code: #f06292;
-  --preformatted: #ccc;
-  --disabled: #111;
+  --code: hsl(340, 83%, 66%);
+  --preformatted: hsl(0, 0%, 80%);
+  --disabled: hsl(0, 0%, 7%);
 }
 
 button,
@@ -20,6 +20,12 @@ input[type="submit"] {
   place-items: center;
 }
 
+h1 {
+  font-size: 4rem;
+  text-shadow: -2px 2px 0 var(--code), 2px 2px 0 var(--code),
+    2px -2px 0 var(--code), -2px -2px 0 var(--code);
+}
+
 section > div {
   display: grid;
   place-items: center;
@@ -29,7 +35,8 @@ section h2 {
   text-align: center;
 }
 
-.color-display {
+.color-display,
+.drop-zone {
   width: 400px;
   height: 400px;
   background: var(--text-light);
@@ -45,4 +52,20 @@ section h2 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.drag-drop {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.drop-zone {
+  display: grid;
+  place-items: center;
+}
+
+.drag-element {
+  background: var(--accent);
+  border-radius: 5px;
+  padding: 1rem 2rem;
 }
