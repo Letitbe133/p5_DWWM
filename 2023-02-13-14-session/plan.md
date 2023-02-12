@@ -16,13 +16,25 @@ On aborde la notion d'événement.
 - en quoi c'est intéressant pour nous dev ?
 - comment on travaille avec ?
 
+## Evénements live
+
+On se fait une petit live en mode collaboratif
+
 ### Exercices sur les événements
 
 Exercices en autonomie pour pratiquer et bien comprendre la notion d'événements en Javascript
 
-## Evénements live
+## Stuff#1
 
-On se fait une petit live en mode collaboratif
+### On scrape ou bien ?
+
+On scrape une page web avec PHP
+
+## Stuff#2
+
+### Les modules en Javascript
+
+On parle modules et on voit comment ça marche
 
 ## Introduction à l'API Fetch
 
