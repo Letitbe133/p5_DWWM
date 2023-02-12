@@ -14,7 +14,13 @@ On aborde la notion d'événement.
 
 - c'est quoi un événement ?
 - en quoi c'est intéressant pour nous dev ?
+  - réagir aux interactions utilisateur
+  - réagir aux événements du navigateur
 - comment on travaille avec ?
+  - anatomie d'un listener
+  - once
+  - capture / propagation
+  - event delegation
 
 ## Evénements live
 
