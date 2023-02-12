@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  justify-content: center;
+}
+
+h1 {
+  background: #1e9600; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0000,
+    #fff200,
+    #1e9600
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #fff200,
+    #1e9600
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  color: transparent;
+
+  background-clip: text;
+  text-fill-color: transparent;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  max-width: 500px;
+}
+
+.window {
+  font-size: 1.2rem;
+}
+
+.title-bar {
+  font-size: 1.5rem;
+}
+
+menu[role="tablist"] button {
+  font-size: 0.8rem;
+}
