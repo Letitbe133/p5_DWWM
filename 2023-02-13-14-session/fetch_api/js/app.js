@@ -64,3 +64,13 @@ fetch("https://jsonplaceholder.typicode.com/posts/", {
   .then(function (data) {
     console.log(data);
   });
+
+fetch("sample.txt")
+  .then(function (res) {
+    return res.text();
+  })
+  .then(function (text) {
+    console.log(text);
+  });
+
+// test push
