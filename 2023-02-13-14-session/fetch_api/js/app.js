@@ -72,5 +72,3 @@ fetch("sample.txt")
   .then(function (text) {
     console.log(text);
   });
-
-// test push
