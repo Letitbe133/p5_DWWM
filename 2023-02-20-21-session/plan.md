@@ -18,7 +18,7 @@ On en est où ?
   - method : méthode HTTP utilisée (GET / POST)
   - body : corps de la requête
   - headers : informations envoyées par le navigateur au serveur distant
-  -
+- CORS (Cross Origin Resource Sharing)
 
 ### Notation asynchrone async / await
 
@@ -81,14 +81,19 @@ C'est une bonne ressource pour vous faire la main en allant du plus simple vers 
 
 Il sera nécessaire pour utiliser cette API de générer une clé d'API gratuite
 
+⚠️ Attention, vous ne pourrez pas déployer votre application en live car le plan gratuit "développeur" pour l'utilisation de l'API ne le permet pas. Pas de problème en **localhost** par contre ⚠️
+
 **_NewsAPi_** :
 
-API Key : Yes
+- API Key : Yes
 
-Doc : https://newsapi.org/docs
+- Doc : https://newsapi.org/docs
 
-rechercher tout :
-endpoint : "https://newsapi.org/v2/everything?q"
+- rechercher tout :
+
+  - endpoint : "https://newsapi.org/v2/everything?q"
+
+- remarques : vous pouvez utiliser pas mal de paramètres pour filtrer votre recherche
 
 **Github** met à votre disposition une API riche et très (trop ?) documentée.
 
@@ -98,14 +103,15 @@ Il n'est pas nécessaire pour ces endpoints de générer une clé d'API ou un to
 
 **_Github_** :
 
-API Key : No
+- API Key : No
 
-Doc :
-recherche par mot clé :
-endpoint : "https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}"
+- Doc : [Doc API Github](https://docs.github.com/fr/rest?apiVersion=2022-11-28)
+- recherche par mot clé :
 
-recherche par user :
-endpoint : "https://api.github.com/users/{user}"
+  - endpoint : "https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}"
+
+- recherche par user :
+  - endpoint : "https://api.github.com/users/{user}"
 
 **HackerNews** met aussi à votre disposition une API gratuite vous permettant entre autres d'afficher les articles publiés sur le site.
 
@@ -113,18 +119,19 @@ J'ai sélectionné pour vous 2 endpoints qui vous permttront de récupérer la l
 
 Pour ce faire, vous aurez besoin de faire 2 requêtes.
 
-Il sera nécessaire pour utiliser cette API de générer une clé d'API gratuite
+⚠️ Il sera nécessaire pour utiliser cette API de générer une clé d'API gratuite ⚠️
 
 **_HackerNews_** :
 
-API Key : Yes
-Doc : https://hackernews.api-docs.io/v0/overview/introduction
+- API Key : Yes
+- Doc : [Doc API HAckernews](https://hackernews.api-docs.io/v0/overview/introduction)
 
-top stories :
-endpoint : "https://hacker-news.firebaseio.com/v0/topstories.json"
+- top stories :
 
-specific item :
-endpoint : https://hacker-news.firebaseio.com/v0/item/{item_id}.json
+  - endpoint : "https://hacker-news.firebaseio.com/v0/topstories.json"
+
+- article spécifique :
+  - endpoint : https://hacker-news.firebaseio.com/v0/item/{item_id}.json
 
 ## Travail en autonomie
 
