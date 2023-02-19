@@ -32,6 +32,7 @@ async function getData(url) {
 #### Resources
 
 - [async / await - Javascript.info](https://javascript.info/async-await)
+- [CORS](https://www.abstractapi.com/api-glossary/cors)
 
 ## Les requêtes HTTP
 
@@ -67,8 +68,8 @@ Une fois installée, on va lancer l'application et tester son fonctionnement.
 
 ### Ressources
 
-- cheatsheet codes HTTP
-- Le protocole HTTP - MDN
+- [cheatsheet codes HTTP](https://devhints.io/http-status)
+- [Le protocole HTTP - MDN](https://developer.mozilla.org/fr/docs/Web/HTTP)
 
 ## Fetch en pratique
 
@@ -113,25 +114,36 @@ Il n'est pas nécessaire pour ces endpoints de générer une clé d'API ou un to
 - recherche par user :
   - endpoint : "https://api.github.com/users/{user}"
 
-**HackerNews** met aussi à votre disposition une API gratuite vous permettant entre autres d'afficher les articles publiés sur le site.
+**Punkapi** vous propose une API plutôt cool si vous aimez la bière 😉. Très simple d'utilisation, elle vous permettra de récupérer et d'afficher pas mal d'infos sur les bières Brewdog.
 
-J'ai sélectionné pour vous 2 endpoints qui vous permttront de récupérer la liste des id des articles, puis d'afficher leurs information et un lien vers l'article en question.
+Un seul endpoint pour cette API pour laquelle il n'est pas nécessaire de générer de clé.
 
-Pour ce faire, vous aurez besoin de faire 2 requêtes.
+**Punkapi** :
 
-⚠️ Il sera nécessaire pour utiliser cette API de générer une clé d'API gratuite ⚠️
+- API Key : No
 
-**_HackerNews_** :
+- Doc : [Doc API Punkapi](https://punkapi.com/documentation/v2)
+- toutes les bières :
 
-- API Key : Yes
-- Doc : [Doc API HAckernews](https://hackernews.api-docs.io/v0/overview/introduction)
+  - endpoint : "https://api.punkapi.com/v2/beers"
 
-- top stories :
+- recherche par bière :
+  - endpoint : "https://api.punkapi.com/v2/beers?{id}"
+- bière au hasard :
+  - endpoint : "https://api.punkapi.com/v2/beers/random"
 
-  - endpoint : "https://hacker-news.firebaseio.com/v0/topstories.json"
+### Your choice
 
-- article spécifique :
-  - endpoint : https://hacker-news.firebaseio.com/v0/item/{item_id}.json
+Vous pouvez choisir une des 3 APIs sélectionnées, mais évidemment, libre à vous d'en choisir d'autres si vous vous sentez une âme d'explorateur !
+
+Attention cependant à plusieurs choses :
+
+- mode d'authetification si applicable
+  - clé d'API
+  - header d'authentification
+  - ...
+- support de CORS
+  - pas de support, pas de fetch depuis le navigateur 😿
 
 ## Travail en autonomie
 
