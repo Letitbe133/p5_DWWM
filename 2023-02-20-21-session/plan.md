@@ -77,24 +77,26 @@ Travaillez avec une API
 
 J'ai sélectionné pour vous 3 APIs qui vont vous permettre de vous familiariser avec les requêtes AJAX et l'utilisation de Fetch.
 
-**NewsApi** vous permettra de rechercher dans une liste d'article les sulets qui vous intéressent en les filtrant par catégorie, pays, date, etc...
+**Newscatcher** vous permettra de rechercher dans une liste d'article les sulets qui vous intéressent en les filtrant par catégorie, pays, date, etc...
 C'est une bonne ressource pour vous faire la main en allant du plus simple vers des requêtes plus complexes
 
 Il sera nécessaire pour utiliser cette API de générer une clé d'API gratuite
 
-⚠️ Attention, vous ne pourrez pas déployer votre application en live car le plan gratuit "développeur" pour l'utilisation de l'API ne le permet pas. Pas de problème en **localhost** par contre ⚠️
-
-**_NewsAPi_** :
+**_NewsCatcher_** :
 
 - API Key : Yes
 
-- Doc : https://newsapi.org/docs
+- Doc : https://docs.newscatcherapi.com/
 
 - rechercher tout :
 
-  - endpoint : "https://newsapi.org/v2/everything?q"
+  - endpoint : "https://api.newscatcherapi.com/v2/search?q=Apple{&from=2021/12/15&countries=CA&page_size=1}"
 
-- remarques : vous pouvez utiliser pas mal de paramètres pour filtrer votre recherche
+- remarques :
+  - vous pouvez utiliser pas mal de paramètres pour filtrer votre recherche
+  - ce qui est entre { } dans l'url est optionnel, ce sont vos paramètres de recherche
+
+⚠️ attention à la méthode d'authentification qui requiert un **header** spécifique ⚠️
 
 **Github** met à votre disposition une API riche et très (trop ?) documentée.
 
