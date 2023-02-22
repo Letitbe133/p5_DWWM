@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  width: clamp(320px, 60%, 600px) !important;
+}
