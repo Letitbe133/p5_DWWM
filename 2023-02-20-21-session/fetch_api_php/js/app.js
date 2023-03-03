@@ -56,7 +56,7 @@
 //   }
 // }
 
-fetch("http://localhost:8000/index.php?name=Lionel")
+fetch("http://localhost:8000/index.php")
   .then((res) => {
     return res.json();
   })
