@@ -1,0 +1,7 @@
+<section class="uk-section">
+    <article>
+        <h2>We like it Hot 🌶️</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, blanditiis qui assumenda minima magnam animi eveniet maxime non soluta laudantium cum? Delectus corrupti debitis recusandae voluptatem libero consectetur nesciunt, deleniti, neque sint id at unde laborum itaque quos illum numquam possimus, sed cupiditate? Sed soluta dignissimos tempora numquam officia similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt dolore eos molestias suscipit ullam aspernatur saepe corrupti consequuntur. Ipsum inventore, modi non consequatur veritatis nobis odit alias officia sequi fuga reprehenderit voluptatum, quis ratione sint? Fuga ipsa enim perspiciatis voluptatum. Cumque commodi quidem enim itaque architecto mollitia quia dolore sint perferendis distinctio. Quas quia iure modi deserunt dolor, temporibus ad unde cum vel tempora, hic, aspernatur nobis voluptatibus culpa quasi quidem sapiente est magni qui commodi similique sint. Quam voluptate odit obcaecati tempora veritatis iure, quibusdam voluptatum qui placeat deserunt repellendus, excepturi necessitatibus! Cumque quaerat est rerum velit at.</p>
+    </article>
+</section>
