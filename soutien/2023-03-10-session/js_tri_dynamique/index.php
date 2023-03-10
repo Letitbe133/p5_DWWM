@@ -6,10 +6,6 @@ require_once 'database/Database.php';
 
 require_once 'functions/functions.php';
 
-// $db = new Database($config);
-
-// $db->connect();
-
 $todos = getAllTodos(new Database($config));
 
 ?>

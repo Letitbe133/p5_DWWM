@@ -3,7 +3,7 @@
 $config = [
     'host' => 'localhost',
     'charset' => 'UTF8',
-    'dbname' => 'todo_demo',
-    'userName' => '',
-    'pwd' => '',
+    'dbname' => 'votre_bdd',
+    'userName' => 'votre_username',
+    'pwd' => 'votre_password',
 ];
