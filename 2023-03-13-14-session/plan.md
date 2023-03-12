@@ -25,7 +25,7 @@ Mais il se passe quoi derrière ?
 
 ## Validation / Sécurisation des données côté backend
 
-⚠️ **Ne jamais faire confiance aux inputs utilisateur** ⚠️
+⚠️ **Ne jamais faire confiance aux inputs extérieurs** ⚠️
 
 Pourquoi ?
 
@@ -47,6 +47,8 @@ Par exemple j'attends :
 - une `string` non vide
 - ...
 
+⚠️ Une validation côté backend **NE VOUS DISPENSE PAS D'UNE VALIDATION CÔTÉ FRONTEND** ⚠️
+
 ### Sécurisation
 
 On peut passer tout et n'importe quoi dans un input.
@@ -54,6 +56,17 @@ On peut passer tout et n'importe quoi dans un input.
 Ca veut dire qu'on peut entre autre passer des balises HTML, des caractères spéciaux, ...
 
 Qu'est-ce qui pourrait se passer si dans un input un utilisateur passe une balise `<script>` qui redirigerait vers une autre url ?
+
+## File Upload
+
+### Comment ça marche ?
+
+### Bonnes pratiques
+
+- Quelles pourraient être les problèmatiques rencontrées lors d'un upload de fichier ?
+- Comment y remédier ?
+- Où stocker les fichiers ?
+- Quelles problématiques pouvez-vous rencontrer lors du stockage ?
 
 ## Héberger son application web frontend
 
@@ -79,6 +92,8 @@ Si on a le temps ...
 
 ### Ressources
 
+- [Les filtres en PHP - php.net](https://www.php.net/manual/fr/filter.filters.php)
+- [Validation et sécurisation des inputs - phptherightway.com](https://phptherightway.com/#data_filtering)
 - [Github Pages](https://kinsta.com/blog/github-pages/)
 - [Github Pages Quickstart - Doc Officielle](https://docs.github.com/fr/pages/quickstart)
 - [Netlify Deploy From Git](https://docs.netlify.com/site-deploys/create-deploys/)
