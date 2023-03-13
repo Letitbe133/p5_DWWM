@@ -9,10 +9,10 @@
 
 </head>
 <body>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" novalidate>
     <label for="fname">First Name</label><input type="text" name="fname" id="fname">
     <label for="lname">Last Name</label><input type="text" name="lname" id="lname">
-    <label for="age">Age</label><input type="number" name="age" id="age">
+    <label for="age">Age</label><input type="text" name="age" id="age">
     <label for="email">Email</label><input type="email" name="email" id="email">
 
 
@@ -26,13 +26,45 @@
     // vérifier si le formulaire a bien été soumis en POST
     // regardez ce que contient le tableau $_SERVER
 
-    // vérifier si les inputs ne sont pas vides
-    // comment vérifier ça ?
+    if ('POST' === $_SERVER['REQUEST_METHOD']) {
+        // echo 'Formulaire soumis';
 
-    // vérifier si les données reçues correspondent bien à ce qu'on attend
-    // il existe plusieurs méthodes pour filtrer les données
+        // var_dump($_POST);
+        // extraire les données pour les utiliser
 
-    // s'assurer que les données sont safe
-    // certains caractères spéciaux peuvent poser problème
+        extract($_POST);
 
-    // extraire les données pour les utiliser
+        // on vérifie si les inputs sont vides
+        // comment vérifier ça ?
+        if (empty($fname) || empty($lname) || empty($email) || empty($age)) {
+            echo 'Certains champs sont vides';
+
+            exit;
+        }
+        // vérifier si les données reçues correspondent bien à ce qu'on attend
+        // il existe plusieurs méthodes pour filtrer les données
+
+        // var_dump(filter_var($email, FILTER_VALIDATE_EMAIL));
+        // var_dump(filter_var($age, FILTER_VALIDATE_INT));
+
+        // if (!filter_var($email, FILTER_VALIDATE_EMAIL) || !filter_var($age, FILTER_VALIDATE_INT)) {
+        //     echo 'Format de données incorrect';
+
+        //     exit;
+        // }
+
+        // autre méthode pour valider les inputs d'un formulaire : filter_input
+        if (!filter_input(INPUT_POST, 'age', FILTER_VALIDATE_INT) || !filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
+            echo 'Format de données incorrect';
+
+            exit;
+        }
+
+        // s'assurer que les données sont safe
+        // certains caractères spéciaux peuvent poser problème
+
+        $fname = trim(htmlspecialchars($fname));
+        $lname = trim(htmlspecialchars($lname));
+        $age = trim($age);
+        $email = trim(htmlspecialchars($email));
+    }
