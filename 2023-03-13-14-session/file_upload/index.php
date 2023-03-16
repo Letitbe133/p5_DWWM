@@ -1,3 +1,8 @@
+<?php
+
+require_once 'uploadProcess.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +16,20 @@
 <body>
     <h1>Let's Upload !</h1>
     <section>
-        <form action="" method="post">
-            <label for="image">Choose an image</label><input type="file" id="image" name="image">
+        <p><?php echo $msg ?? ''; ?></p>
+    </section>
+    <section>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+            <label for="image">Choose an image (jpg, png, gif) 2Mb or less</label><input type="file" id="image" name="image">
             <button type="submit">Upload</button>
         </form>
     </section>
     <section id="display">
         <article>
             <h2>Uploaded Image</h2>
-            <img src="<?php echo $src ?? ''; ?>" alt="">
+            <img src="<?php echo $path ?? ''; ?>" alt="">
         </article>
     </section>
 </body>
 </html>
 
-<?php
