@@ -1,0 +1,20 @@
+{
+  "name": "lionel/composer_and_stuff",
+  "description": "Les bases de Composer",
+  "type": "project",
+  "require-dev": {
+    "fakerphp/faker": "^1.21",
+    "phpunit/phpunit": "^10.0"
+  },
+  "authors": [
+    {
+      "name": "letitbe133",
+      "email": "lionel.lft@me.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

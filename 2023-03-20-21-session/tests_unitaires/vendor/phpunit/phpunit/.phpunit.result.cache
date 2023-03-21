@@ -1,0 +1,1 @@
+{"version":1,"defects":{"FakerTest::testGetUsersShouldReturnAnArray":7,"FakerTest::testCreateUsersShouldThrowInvalidArgumentException":7},"times":{"FakerTest::testGetUsersShouldReturnAnArray":0.021,"FakerTest::testCreateUsersShouldCreateArrayOfLength3":0.001,"FakerTest::testCreateUsersShouldThrowInvalidArgumentException":0.001}}
